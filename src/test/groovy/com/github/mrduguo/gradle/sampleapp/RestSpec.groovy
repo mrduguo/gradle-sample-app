@@ -22,9 +22,9 @@ class RestSpec extends AbstractSpec {
         entity.body == reversedString
 
         where:
-        path           || reversedString
-        '/reverse/uno' || 'onu'
-        '/reverse/ufc' || 'cfu'
+        path           | reversedString
+        '/reverse/uno' | 'onu'
+        '/reverse/ufc' | 'cfu'
     }
 
     void "should get json!"() {
