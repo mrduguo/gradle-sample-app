@@ -1,27 +1,4 @@
-## gradle sample lib project 
-a demo for spring boot based app based on [mrduguo/gradle-buildscript](https://github.com/mrduguo/gradle-buildscript) project. 
-
-
-
-### the only requirement
-
-* JAVA 7 or newer
-
-
-### sample build command
-
-```
-./gradlew
-
-
-./gradlew run
-
-```
-
-
-
-
-## gradle sample app project  [![Build Status](https://travis-ci.org/mrduguo/gradle-sample-app.svg?branch=master)](https://travis-ci.org/mrduguo/gradle-sample-app)
+# gradle sample app project  [![Build Status](https://travis-ci.org/mrduguo/gradle-sample-app.svg?branch=master)](https://travis-ci.org/mrduguo/gradle-sample-app)
 A demo for spring boot based app based on [mrduguo/gradle-buildscript](https://github.com/mrduguo/gradle-buildscript) project. 
 
 
