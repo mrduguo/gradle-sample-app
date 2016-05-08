@@ -58,21 +58,6 @@ The app then can be accessed from:
 
 This require you have `~/.aws/credentials` configured
 
-
-#### build and deploy all in one
-
-```
-
-mavenReleaseRepoUrl=https://s3-eu-west-1.amazonaws.com/elasticbeanstalk-eu-west-1-349318639323/maven-repo/ \
-awsEbOverrideExistsEnv=true \
-./gradlew clean build aws_eb_deploy
- 
-```
-
-* [sample output](/src/doc/sample-build-logs/aws-build-and-deploy-all-in-one.log)
-* the build output log will contain the service url
-* [the zero downtime build and deployment process](/src/doc/the-zero-downtime-build-and-deployment-process.md)
-
 #### the default aws build which will upload artifact to s3
 
 ```
@@ -95,3 +80,18 @@ awsEbOverrideExistsEnv=true \
 ```
 
 * [sample output](/src/doc/sample-build-logs/aws-deploy.log)
+
+
+#### build and deploy all in one
+
+```
+
+mavenReleaseRepoUrl=https://s3-eu-west-1.amazonaws.com/elasticbeanstalk-eu-west-1-349318639323/maven-repo/ \
+awsEbOverrideExistsEnv=true \
+./gradlew clean build aws_eb_deploy
+ 
+```
+
+* [sample output](/src/doc/sample-build-logs/aws-build-and-deploy-all-in-one.log)
+* the build output log will contain the service url
+* [the zero downtime build and deployment process](/src/doc/the-zero-downtime-build-and-deployment-process.md)
