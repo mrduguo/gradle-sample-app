@@ -2,9 +2,10 @@
 A demo for spring boot based app based on [mrduguo/gradle-buildscript](https://github.com/mrduguo/gradle-buildscript) project. 
 
 
-## the only requirement
+## Requirements
 
 * JAVA 7 or newer
+* Docker (optional, to use `-x docker` to skip if you don't have docker installed)
 
 
 ## sample build command
@@ -29,6 +30,17 @@ Then the app can be accessed from:
 
 * [http://localhost:8888](http://localhost:8888)
 
+#### run the docker image
+
+```
+docker run -it --rm -p 8888:8888 gradle-sample-app
+```
+
+Then the app can be accessed from:
+
+* [http://192.168.99.100:8888/](http://192.168.99.100:8888/) or [http://127.0.0.1:8888/](http://127.0.0.1:8888/)
+
+The image also pushed as [mrduguo/gradle-sample-app](https://hub.docker.com/r/mrduguo/gradle-sample-app/) in docker hub.
 
 ## continious integration build
 

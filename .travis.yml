@@ -1,1 +1,10 @@
-script: JOB_NAME=CI ./gradlew
+sudo: required
+
+language: ruby
+
+services:
+  - docker
+
+script:
+- docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+- dockerTag=mrduguo/gradle-sample-app JOB_NAME=CI ./gradlew
