@@ -104,7 +104,6 @@ awsEbOverrideExistsEnv=true \
  
 ```
 
-
 * [sample output](/src/doc/sample-build-logs/aws-build-and-deploy-all-in-one.log)
 * the build output log will contain the service url
 * [the zero downtime build and deployment process](/src/doc/the-zero-downtime-build-and-deployment-process.md)
