@@ -17,7 +17,7 @@
 
  ./gradlew -x test
 
- ./gradlew -Dtest.single=MyTest
+ ./gradlew -Dtest.single=HealthSpec
 
  ./gradlew run
 
